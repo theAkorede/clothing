@@ -1,43 +1,44 @@
 import React from "react";
-import { TbMenuDeep } from "react-icons/tb";
+import { logo } from "../assets/index";
+import { LuShoppingBag } from "react-icons/lu";
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+  const productData = useSelector((state) => state.akorede.productData);
+  const userInfo = useSelector((state) => state.akorede.userInfo);
   return (
-    <div>
-      <div className="max-w-[1348px] px-8 mx-auto flex justify-between items-center py-5">
-        <a href="#" className="text-2xl font-bold">
-          HIRE<span className="text-pink-500 font-bold">CAR</span>
-        </a>
+    <div className="w-full h-20 border-b-[1px] border-b-zinc-500 bg-white text-zinc-600 sticky top-0 z-50 bg-white/80 backdrop-blur-2xl">
+      <div className="max-w-screen-xl mx-auto h-full flex items-center justify-between px-4 xl:px-0">
+        <Link to="/">
+          <img className="w-32" src={logo} alt="logo" />
+        </Link>
+        <div className="flex  items-center gap-x-5">
+          <Link to="/cart">
+            <div className="relative">
+              <LuShoppingBag className="w-7 h-7 " />
+              <span className="absolute top-0 -left-1 bg-zinc-800 text-zinc-200 w-4 h-4 rounded-full text-xs flex items-center justify-center group-hover:bg-black font-semibold group-hover:text-white">
+                {productData.length}
+              </span>
+            </div>
+          </Link>
+          <Link to="/login">
+            <img
+              className="w-7 h-7 rounded-full"
+              src={
+                userInfo
+                  ? userInfo.image
+                  : "https://images.pexels.com/photos/264547/pexels-photo-264547.jpeg?auto=compress&cs=tinysrgb&w-1260&h-750&drp-1"
+              }
+              alt="userlogo"
+            />
+          </Link>
 
-        <div className="hidden lg:block">
-          <ul className="flex items-center gap-10">
-            <li className="text-light-gray border-b-2 hover:border-pink-500 transition-all duration-150 ease-in cursor-pointer border-pink-500">
-              Home
-            </li>
-            <li className="text-light-gray border-b-2 hover:border-pink-500 transition-all duration-150 ease-in cursor-pointer border-transparent">
-              Booking
-            </li>
-            <li className="text-light-gray border-b-2 hover:border-pink-500 transition-all duration-150 ease-in cursor-pointer border-transparent">
-              About
-            </li>
-            <li className="text-light-gray border-b-2 hover:border-pink-500 transition-all duration-150 ease-in cursor-pointer border-transparent">
-              Services
-            </li>
-            <li className="text-light-gray border-b-2 hover:border-pink-500 transition-all duration-150 ease-in cursor-pointer border-transparent">
-              Contact
-            </li>
-          </ul>
-        </div>
-
-        <TbMenuDeep className="block lg:hidden cursor-pointer w-6 h-6" />
-
-        <div className="hidden lg:flex items-center gap-[30px]">
-          <button className="outline-none transition-all duration-150 ease-in text-black hover:text-pink-500">
-            Login
-          </button>
-          <button className="outline-none transition-all duration-150 ease-in text-black border-2 border-pink-500 rounded-full py-2 px-5 hover:bg-pink-500">
-            Sign up
-          </button>
+          {userInfo && (
+            <p className="text-base font-semibold uppercase underline underline-offset-2">
+              {userInfo.name}
+            </p>
+          )}
         </div>
       </div>
     </div>
