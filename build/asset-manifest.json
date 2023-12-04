@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d42e4f3.css",
-    "main.js": "/static/js/main.a5a5e0ab.js",
+    "main.css": "/static/css/main.be3feef0.css",
+    "main.js": "/static/js/main.55f45221.js",
     "static/media/Top4.jpg": "/static/media/Top4.87fa8edc715f8f191934.jpg",
     "static/media/Top3.jpg": "/static/media/Top3.103503b583d3f885e798.jpg",
     "static/media/Top2.jpg": "/static/media/Top2.09e100872960fdffe4f3.jpg",
@@ -11,15 +11,20 @@
     "static/media/HeroImg.png": "/static/media/HeroImg.dd1beac12d76a7e90b13.png",
     "static/media/Top1.jpg": "/static/media/Top1.e29705c38ab83d7fd664.jpg",
     "static/media/Top.jpg": "/static/media/Top.f27ce9c586520043b636.jpg",
+    "static/media/Jean2.jpg": "/static/media/Jean2.85733dfb8de0b2bb904e.jpg",
+    "static/media/Jean 3.jpg": "/static/media/Jean 3.9cbb0f7730e955b046e7.jpg",
+    "static/media/Jean1.jpg": "/static/media/Jean1.e8dc7bd426cab89b9745.jpg",
+    "static/media/Gucci Short.jpg": "/static/media/Gucci Short.7e6b250c35d73e850fd7.jpg",
     "static/media/HeroImg2.png": "/static/media/HeroImg2.2d4b788781f029c02d1c.png",
     "static/media/logo.png": "/static/media/logo.9bb01cfe95617401f1f8.png",
+    "static/media/whatsapp.png": "/static/media/whatsapp.26443e8e5c46344fd20c.png",
     "static/media/HeroImg1.png": "/static/media/HeroImg1.442fc37e99c7f868e823.png",
     "index.html": "/index.html",
-    "main.2d42e4f3.css.map": "/static/css/main.2d42e4f3.css.map",
-    "main.a5a5e0ab.js.map": "/static/js/main.a5a5e0ab.js.map"
+    "main.be3feef0.css.map": "/static/css/main.be3feef0.css.map",
+    "main.55f45221.js.map": "/static/js/main.55f45221.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d42e4f3.css",
-    "static/js/main.a5a5e0ab.js"
+    "static/css/main.be3feef0.css",
+    "static/js/main.55f45221.js"
   ]
 }

@@ -6,6 +6,10 @@ import image5 from "./Top4.jpg";
 import image6 from "./Top5.jpg";
 import image7 from "./Top6.jpg";
 import image8 from "./Top7.jpg";
+import image9 from "./Jean1.jpg";
+import image10 from "./Jean2.jpg";
+import image11 from "./Jean 3.jpg";
+import image12 from "./Gucci Short.jpg";
 
 
 
@@ -64,6 +68,38 @@ export const menWears = [
         title: "Stripe Hoodie",
         price:  5000,
         image: image8,
+        quantity: 1,
+
+      },
+      {
+        id: 9,
+        title: "Gray Jean",
+        price:  15000,
+        image: image9,
+        quantity: 1,
+
+      },
+      {
+        id: 10,
+        title: "Blue Jean",
+        price:  12500,
+        image: image10,
+        quantity: 1,
+
+      },
+      {
+        id: 11,
+        title: "Crazy Jean",
+        price:  12700,
+        image: image11,
+        quantity: 1,
+
+      },
+      {
+        id: 12,
+        title: "Gucci Short",
+        price:  8000,
+        image: image12,
         quantity: 1,
 
       },

@@ -11,6 +11,7 @@ import {
 import Cart from "./Pages/Cart";
 import ProductCart from "./Components/ProductCart";
 import Login from "./Pages/Login";
+import { whatsapp } from "./assets";
 
 const Layout = () => {
   return (
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/ProductCart/:id",
-        element: <ProductCart />
+        element: <ProductCart />,
       },
       {
         path: "/Cart",
@@ -47,12 +48,27 @@ const router = createBrowserRouter([
   },
 ]);
 
-
 function App() {
   return (
-    <RouterProvider router={router}>
-      <ScrollRestoration />
-    </RouterProvider>
+    <div>
+      <RouterProvider router={router}>
+        <ScrollRestoration />
+      </RouterProvider>
+
+      <div
+        className="fixed bottom-0 right-0 p-3 cursor-pointer"
+        style={{ zIndex: 6, left: "auto" }}
+      >
+        <a
+          href="https://wa.me/+2349026000778?text=Hello! have some questions. Can i help you?"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block"
+        >
+          <img src={whatsapp} alt="Whatsapp" className="w-16 h-15" />
+        </a>
+      </div>
+    </div>
   );
 }
 
